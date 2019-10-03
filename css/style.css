@@ -1,0 +1,11 @@
+header{
+    height: 80px;
+    width: 100%;
+    background-color: #21C089;
+}
+
+header img{
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
