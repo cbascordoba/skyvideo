@@ -1,11 +1,34 @@
-header{
+body{
+    margin: 0;
+    background-color: #AB88FF;
+}
+.header{
     height: 80px;
     width: 100%;
-    background-color: #21C089;
+    background-color: #AB88FF;
 }
 
-header img{
+.header__img{
     width: 200px;
     margin-top: 10px;
     margin-left: 10px;
 }
+
+.header__menu{
+    margin-right: 30px;
+}
+
+.header__menu ul{
+    display: none;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 100px;
+    margin: 0px 0px 0px -14px;
+    text-align: right;
+}
+.header__menu--profile{
+  margin-right: 8px;
+  width: 40px;
+}
+
