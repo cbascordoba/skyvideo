@@ -1,3 +1,5 @@
+$blanco:white;
+
 body{
     margin: 0;
     background-color: #8E57ED;
@@ -20,17 +22,18 @@ body{
 
 .header__menu{
     margin-right: 30px;
+    ul{
+        display: none;
+        list-style: none;
+        padding: 0;
+        position: absolute;
+        width: 100px;
+        margin: 0px 0px 0px -14px;
+        text-align: right;
+    }
 }
 
-.header__menu ul{
-    display: none;
-    list-style: none;
-    padding: 0;
-    position: absolute;
-    width: 100px;
-    margin: 0px 0px 0px -14px;
-    text-align: right;
-}
+
 .header__menu:hover ul, u:hover{
     display: block;
 
@@ -39,7 +42,7 @@ body{
     margin: 10px 0px;
 }
 .header__menu li a{
-  color: white;
+  color: $blanco;
   text-decoration: none;
 }
 .header__menu li a:hover{
@@ -58,7 +61,7 @@ body{
 }
 .header__menu--profile p{
  margin: 0px;
- color: white;
+ color: $blanco;
 
 }
 
@@ -72,12 +75,12 @@ body{
 }
 
 .main__title{
-    color: white;
+    color: $blanco;
     font-size: 25px;
 }
 
 .categories__title{
-    color: white;
+    color: $blanco;
     font-size: 16px;
     position: absolute;
     padding-left: 30px;
@@ -86,9 +89,9 @@ body{
 
 .input{
     background-color: rgba(255,255,255,0.1);
-    border: 2px solid white;
+    border: 2px solid $blanco;
     border-radius: 25px;
-    color: white;
+    color: $blanco;
     font-family: 'Muli', sans-serif;
     font-size: 16px;
     height: 50px;
@@ -99,7 +102,7 @@ body{
 }
 
 ::placeholder{
-    color: white;
+    color: $blanco;
 }
 /* FIN ESTILOS DEL BUSCADOR.  */
 
@@ -112,7 +115,7 @@ body{
 }
 
 .carousel__container{
-    white-space: nowrap;
+    $blanco-space: nowrap;
     margin: 70px 0px;
     padding-bottom: 10px;
 }
@@ -170,7 +173,7 @@ opacity: 1;
 }
 
 .carousel-item__details--title, .carousel-item__details--subtitle {
-    color: white;
+    color: $blanco;
 }
 /* FIN ESTILOS CAROUSEL */
 

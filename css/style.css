@@ -22,7 +22,6 @@ body {
 .header__menu {
   margin-right: 30px;
 }
-
 .header__menu ul {
   display: none;
   list-style: none;
@@ -115,7 +114,6 @@ body {
 }
 
 .carousel__container {
-  white-space: nowrap;
   margin: 70px 0px;
   padding-bottom: 10px;
 }
