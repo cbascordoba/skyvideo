@@ -4,13 +4,16 @@ body {
   font-family: "Muli", sans-serif;
 }
 
+.flex, .header {
+  display: flex;
+  align-items: center;
+}
+
 .header {
   height: 80px;
   width: 100%;
   background-color: #8E57ED;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .header__img {
