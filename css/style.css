@@ -1,176 +1,182 @@
-body{
-    margin: 0;
-    background-color: #8E57ED;
-    font-family: 'Muli', sans-serif;
-}
-.header{
-    height: 80px;
-    width: 100%;
-    background-color: #8E57ED;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+body {
+  margin: 0;
+  background-color: #8E57ED;
+  font-family: "Muli", sans-serif;
 }
 
-.header__img{
-    width: 200px;
-    margin-top: 10px;
-    margin-left: 10px;
+.header {
+  height: 80px;
+  width: 100%;
+  background-color: #8E57ED;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header__menu{
-    margin-right: 30px;
+.header__img {
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
-.header__menu ul{
-    display: none;
-    list-style: none;
-    padding: 0;
-    position: absolute;
-    width: 100px;
-    margin: 0px 0px 0px -14px;
-    text-align: right;
+.header__menu {
+  margin-right: 30px;
 }
-.header__menu:hover ul, u:hover{
-    display: block;
 
+.header__menu ul {
+  display: none;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  width: 100px;
+  margin: 0px 0px 0px -14px;
+  text-align: right;
 }
-.header__menu li{
-    margin: 10px 0px;
+
+.header__menu:hover ul, u:hover {
+  display: block;
 }
-.header__menu li a{
+
+.header__menu li {
+  margin: 10px 0px;
+}
+
+.header__menu li a {
   color: white;
   text-decoration: none;
 }
-.header__menu li a:hover{
+
+.header__menu li a:hover {
   text-decoration: underline;
 }
 
-.header__menu--profile{
+.header__menu--profile {
   margin-right: 8px;
   display: flex;
   align-items: center;
 }
-.header__menu--profile img{
- margin-right: 8px;
- width: 40px;
- 
-}
-.header__menu--profile p{
- margin: 0px;
- color: white;
 
+.header__menu--profile img {
+  margin-right: 8px;
+  width: 40px;
+}
+
+.header__menu--profile p {
+  margin: 0px;
+  color: white;
 }
 
 /* ESTILOS DEL BUSCADOR.  */
-.main{
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+.main {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-.main__title{
-    color: white;
-    font-size: 25px;
+.main__title {
+  color: white;
+  font-size: 25px;
 }
 
-.categories__title{
-    color: white;
-    font-size: 16px;
-    position: absolute;
-    padding-left: 30px;
-    width: 100%;
+.categories__title {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  padding-left: 30px;
+  width: 100%;
 }
 
-.input{
-    background-color: rgba(255,255,255,0.1);
-    border: 2px solid white;
-    border-radius: 25px;
-    color: white;
-    font-family: 'Muli', sans-serif;
-    font-size: 16px;
-    height: 50px;
-    padding: 0 20px;
-    width: 70%;
-    outline: none;
-  
+.input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  height: 50px;
+  padding: 0 20px;
+  width: 70%;
+  outline: none;
 }
 
-::placeholder{
-    color: white;
+::placeholder {
+  color: white;
 }
+
 /* FIN ESTILOS DEL BUSCADOR.  */
-
 /* ESTILOS CAROUSEL */
-.carousel{
-    width: 100%;
-    overflow: scroll;
-    padding: 30px;
-    position: relative;
+.carousel {
+  width: 100%;
+  overflow: scroll;
+  padding: 30px;
+  position: relative;
 }
 
-.carousel__container{
-    white-space: nowrap;
-    margin: 70px 0px;
-    padding-bottom: 10px;
+.carousel__container {
+  white-space: nowrap;
+  margin: 70px 0px;
+  padding-bottom: 10px;
 }
 
-.carousel-item{
-    background-color: palevioletred;
-    width: 200px;
-    height: 250px;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-right: 10px;
-    display: inline-block;
-    cursor: pointer;
-    transition: 450ms all;
-    transform-origin: center left;
-    position: relative;
+.carousel-item {
+  background-color: palevioletred;
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center left;
+  position: relative;
 }
 
-.carousel-item:hover ~ .carousel-item{
-
-    transform: translate3d(100px, 0, 0);
+.carousel-item:hover ~ .carousel-item {
+  transform: translate3d(100px, 0, 0);
 }
 
-.carousel__container:hover .carousel-item{
-opacity: 0.3;
-}
-.carousel__container:hover .carousel-item:hover{
-transform:scale(1.5);
-opacity: 1;
-}
-.carousel-item__img{
-    width: 200px;
-    height: 250px;
-    object-fit: cover;
+.carousel__container:hover .carousel-item {
+  opacity: 0.3;
 }
 
-.carousel-item__details{
-    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
-    font-size: 10px;
-    opacity: 0;
-    transition: 450ms opacity;
-    padding: 10px;
-    position: absolute;
-    
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-.carousel-item__details img{
-    width: 20px;
+.carousel__container:hover .carousel-item:hover {
+  transform: scale(1.5);
+  opacity: 1;
 }
 
-.carousel-item__img:hover ~ .carousel-item__details{
-    opacity: 1;
+.carousel-item__img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.carousel-item__details {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  font-size: 10px;
+  opacity: 0;
+  transition: 450ms opacity;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.carousel-item__details img {
+  width: 20px;
+}
+
+.carousel-item__img:hover ~ .carousel-item__details {
+  opacity: 1;
 }
 
 .carousel-item__details--title, .carousel-item__details--subtitle {
-    color: white;
+  color: white;
 }
+
 /* FIN ESTILOS CAROUSEL */
 
+/*# sourceMappingURL=style.css.map */
